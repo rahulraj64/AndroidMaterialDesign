@@ -19,7 +19,9 @@ public class HomeActivity extends ActionBarActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+
+        // setContentView(R.layout.activity_home_nav_drawer_overlap);
+        setContentView(R.layout.activity_home_nav_drawer_non_overlap);
 
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
         setSupportActionBar(toolbar);

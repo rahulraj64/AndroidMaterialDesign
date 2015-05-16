@@ -2,7 +2,6 @@ package com.cinsoftwares.materialdesign;
 
 
 import android.content.Context;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.widget.DrawerLayout;
@@ -38,7 +37,7 @@ public class NavigationDrawerFragment extends Fragment {
     }
 
 
-    public void setupDrawer(DrawerLayout drawerLayout, Toolbar toolbar) {
+    public void setupDrawer(DrawerLayout drawerLayout, final Toolbar toolbar) {
 
         drawerToggle = new ActionBarDrawerToggle(getActivity(), drawerLayout, toolbar, R.string.drawer_open, R.string.drawer_close){
 
@@ -58,6 +57,12 @@ public class NavigationDrawerFragment extends Fragment {
             public void onDrawerClosed(View drawerView) {
                 super.onDrawerClosed(drawerView);
                 getActivity().invalidateOptionsMenu();
+            }
+
+            @Override
+            public void onDrawerSlide(View drawerView, float slideOffset) {
+                super.onDrawerSlide(drawerView, slideOffset);
+                if(slideOffset < 0.7)toolbar.setAlpha( 1- slideOffset);
             }
         };
 
