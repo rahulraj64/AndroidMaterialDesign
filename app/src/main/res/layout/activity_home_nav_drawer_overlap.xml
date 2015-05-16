@@ -9,7 +9,9 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.cinsoftwares.materialdesign.HomeActivity">
+        tools:context="com.cinsoftwares.materialdesign.HomeActivity"
+        android:fitsSystemWindows="true"
+        >
 
         <include
             android:id="@+id/tool_bar"

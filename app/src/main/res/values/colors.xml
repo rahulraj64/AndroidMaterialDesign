@@ -6,4 +6,8 @@
     <color name="accentColor">#FF9800</color>
     <color name="textColorPrimary">#ecf0f1</color>
     <color name="textColorSecondary">#2c3e50</color>
+
+    <color name="orange">#FE9F10</color>
+    <color name="blue">#2BA9D2</color>
+
 </resources>

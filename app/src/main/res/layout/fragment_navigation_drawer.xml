@@ -2,9 +2,19 @@
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.cinsoftwares.materialdesign.NavigationDrawerFragment"
-    android:background="#EEE"
+    android:background="@color/blue"
     >
 
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="left|top"
+        android:src="@drawable/ic_nav_background"
+        android:layout_marginTop="@dimen/nav_drawer_top_margin"
+        android:layout_marginBottom="@dimen/nav_drawer_bottom_margin"
+        />
 
 </FrameLayout>
+
