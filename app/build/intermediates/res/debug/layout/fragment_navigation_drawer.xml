@@ -1,0 +1,11 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cinsoftwares.materialdesign.NavigationDrawerFragment"
+    android:background="#EEE"
+    >
+
+
+
+</FrameLayout>
+<!-- From: file:/D:/androidstudio_works/MaterialDesign/app/src/main/res/layout/fragment_navigation_drawer.xml -->
