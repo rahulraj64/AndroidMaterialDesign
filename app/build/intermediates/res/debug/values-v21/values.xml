@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/D:/androidstudio_works/MaterialDesign/app/src/main/res/values-v21/styles.xml -->
+    <!-- From: file:/Users/rahul/Documents/Android%20Studio%20Projects/AndroidMaterialDesign/app/src/main/res/values-v21/dimens.xml -->
+    <eat-comment/>
+    <dimen name="nav_drawer_top_margin">24dp</dimen>
+    <!-- From: file:/Users/rahul/Documents/Android%20Studio%20Projects/AndroidMaterialDesign/app/src/main/res/values-v21/styles.xml -->
     <eat-comment/>
     <style name="AppTheme" parent="MyMaterialTheme">
+        <item name="android:windowTranslucentStatus">true</item>
     </style>
-    <!-- From: file:/D:/androidstudio_works/MaterialDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-v21/values.xml -->
+    <!-- From: file:/Users/rahul/Documents/Android%20Studio%20Projects/AndroidMaterialDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values-v21/values.xml -->
     <eat-comment/>
     <style name="Base.TextAppearance.AppCompat" parent="android:TextAppearance.Material"/>
     <style name="Base.TextAppearance.AppCompat.Body1" parent="android:TextAppearance.Material.Body1"/>

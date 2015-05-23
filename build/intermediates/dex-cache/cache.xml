@@ -2,32 +2,39 @@
 <items version="2" >
 
     <item
+        jar="/Users/rahul/Documents/Android Studio Projects/AndroidMaterialDesign/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
+        <dex dex="/Users/rahul/Documents/Android Studio Projects/AndroidMaterialDesign/app/build/intermediates/pre-dexed/debug/classes-b06122037a63c47eff641e9b789d38e26c910c36.jar" />
+    </item>
+    <item
+        jar="/Users/rahul/Documents/Android Studio Projects/AndroidMaterialDesign/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/22.0.0/classes.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="c6d79137693d494dee16372d3921f919eb724ced">
+        <dex dex="/Users/rahul/Documents/Android Studio Projects/AndroidMaterialDesign/app/build/intermediates/pre-dexed/debug/classes-d5e12bc05336ca9735f605ef3f2217f8bc01d1a0.jar" />
+    </item>
+    <item
+        jar="/Users/rahul/Documents/Android Studio Projects/AndroidMaterialDesign/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
+        jumboMode="false"
+        revision="22.0.1"
+        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
+        <dex dex="/Users/rahul/Documents/Android Studio Projects/AndroidMaterialDesign/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-ae1b80d860176fa831316a69c9120402a11523e6.jar" />
+    </item>
+    <item
         jar="/Users/rahul/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="/Users/rahul/AndroidstudioProjects/MaterialDesign/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-129a10154fa07d09dc9053dd3711173f9afdf599.jar" />
+        <dex dex="/Users/rahul/Documents/Android Studio Projects/AndroidMaterialDesign/app/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-129a10154fa07d09dc9053dd3711173f9afdf599.jar" />
     </item>
     <item
-        jar="/Users/rahul/AndroidstudioProjects/MaterialDesign/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="/Users/rahul/AndroidstudioProjects/MaterialDesign/app/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-06618903925b7d1ec14584a087daaaf3b8bbd7fe.jar" />
-    </item>
-    <item
-        jar="/Users/rahul/AndroidstudioProjects/MaterialDesign/app/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
-        jumboMode="false"
-        revision="22.0.1"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/Users/rahul/AndroidstudioProjects/MaterialDesign/app/build/intermediates/pre-dexed/debug/classes-43867edc0820d6e3869c02113a4a672ced9f4c53.jar" />
-    </item>
-    <item
-        jar="/Users/rahul/AndroidstudioProjects/MaterialDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jar="/Users/rahul/Documents/Android Studio Projects/AndroidMaterialDesign/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
         jumboMode="false"
         revision="22.0.1"
         sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="/Users/rahul/AndroidstudioProjects/MaterialDesign/app/build/intermediates/pre-dexed/debug/classes-9a956c55a73b47fc83e25bd9ca1a62e5b30c6015.jar" />
+        <dex dex="/Users/rahul/Documents/Android Studio Projects/AndroidMaterialDesign/app/build/intermediates/pre-dexed/debug/classes-f47531c0a2c83c7a4002f97ca87f8b0d6c9c58e8.jar" />
     </item>
 
 </items>

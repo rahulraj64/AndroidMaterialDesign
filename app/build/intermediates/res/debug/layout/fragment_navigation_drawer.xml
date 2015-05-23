@@ -1,11 +1,29 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.cinsoftwares.materialdesign.NavigationDrawerFragment"
-    android:background="#EEE"
+    android:background="@color/blue"
+    android:orientation="vertical"
     >
 
 
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView"
+        android:layout_gravity="left|top"
+        android:src="@drawable/ic_nav_background"
+        android:layout_marginTop="@dimen/nav_drawer_top_margin"
+        android:layout_marginBottom="@dimen/nav_drawer_bottom_margin"
+        />
 
-</FrameLayout>
-<!-- From: file:/D:/androidstudio_works/MaterialDesign/app/src/main/res/layout/fragment_navigation_drawer.xml -->
+    <android.support.v7.widget.RecyclerView
+        android:id = "@+id/recyclerView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
+
+<!-- From: file:/Users/rahul/Documents/Android%20Studio%20Projects/AndroidMaterialDesign/app/src/main/res/layout/fragment_navigation_drawer.xml -->

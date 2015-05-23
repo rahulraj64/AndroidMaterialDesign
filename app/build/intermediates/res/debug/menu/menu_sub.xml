@@ -5,4 +5,4 @@
     <item android:id="@+id/action_settings" android:title="@string/action_settings"
         android:orderInCategory="100" app:showAsAction="never" />
 </menu>
-<!-- From: file:/D:/androidstudio_works/MaterialDesign/app/src/main/res/menu/menu_sub.xml -->
+<!-- From: file:/Users/rahul/Documents/Android%20Studio%20Projects/AndroidMaterialDesign/app/src/main/res/menu/menu_sub.xml -->
