@@ -9,6 +9,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.GestureDetector;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -24,6 +25,7 @@ public class NavigationDrawerFragment extends Fragment {
 
     private static final String PREFERENCE_NAME = "Navigation_Preferences";
     private static final String KEY_NAVIGATION_DRAWER_OPEN_STATUS = "Navigation_drawer_open_status";
+    private static final String TAG = "drawer";
     ActionBarDrawerToggle drawerToggle;
     private boolean isDrawerOpenedBefore;
     RecyclerView recyclerView;
@@ -107,46 +109,54 @@ public class NavigationDrawerFragment extends Fragment {
         });
     }
 
-    class RecyclerTouchListener implements RecyclerView.OnItemTouchListener {
+    class RecyclerTouchListener implements RecyclerView.OnItemTouchListener
+    {
 
         GestureDetector gestureDetector;
-        ItemTouchListener listener;
-        public RecyclerTouchListener(Context context, final RecyclerView recyclerView, final ItemTouchListener listener) {
-            this.listener = listener;
+        ItemTouchListener clickListener;
+        RecyclerTouchListener(Context context, final RecyclerView recyclerView, final ItemTouchListener clickListener)
+        {
+            Log.i(TAG, "item touch listener instantiated  ");
+            this.clickListener = clickListener;
             gestureDetector = new GestureDetector(context, new GestureDetector.SimpleOnGestureListener(){
 
                 @Override
                 public boolean onSingleTapUp(MotionEvent e) {
+                    Log.i(TAG, "onSingleTap " + e);
+                    //return super.onSingleTapUp(e);
                     return true;
                 }
 
                 @Override
-                public boolean onDoubleTap(MotionEvent e) {
-                    return super.onDoubleTap(e);
-                }
-
-                @Override
                 public void onLongPress(MotionEvent e) {
+                    Log.i(TAG, "onLongPress " + e);
                     View child = recyclerView.findChildViewUnder(e.getX(), e.getY());
-                    if(null != child && null != listener)listener.onLongClick(child, recyclerView.getChildPosition(child));
-
+                    if(child != null && clickListener != null)
+                    {
+                        clickListener.onLongClick(child, recyclerView.getChildPosition(child));
+                    }
+                    super.onLongPress(e);
                 }
             });
 
-        }
 
+        }
         @Override
         public boolean onInterceptTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
-
+            Log.i(TAG, "onInterceptTouchEvent " + motionEvent);
+            //gestureDetector.onTouchEvent(motionEvent);
             View child = recyclerView.findChildViewUnder(motionEvent.getX(), motionEvent.getY());
-            if(null != child && null != listener && null != gestureDetector)
-                listener.onClick(child, recyclerView.getChildPosition(child));
+            if(child != null && clickListener != null && gestureDetector.onTouchEvent(motionEvent))
+            {
+                clickListener.onClick(child, recyclerView.getChildPosition(child));
+            }
             return false;
         }
 
         @Override
         public void onTouchEvent(RecyclerView recyclerView, MotionEvent motionEvent) {
 
+            Log.i(TAG, "onTouchEvent " + motionEvent);
         }
     }
 
