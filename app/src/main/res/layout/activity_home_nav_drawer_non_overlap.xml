@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context="com.cinsoftwares.materialdesign.HomeActivity">
+        tools:context="com.cinsoftwares.materialdesign.activities.HomeActivity">
 
         <include
             android:id="@+id/tool_bar"
@@ -31,7 +31,7 @@
                 android:layout_gravity = "start"
                 android:layout_width="@dimen/nav_drawer_width"
                 android:layout_height="match_parent"
-                android:name="com.cinsoftwares.materialdesign.NavigationDrawerFragment"
+                android:name="com.cinsoftwares.materialdesign.fragments.NavigationDrawerFragment"
                 tools:layout="@layout/fragment_navigation_drawer" />
 
         </android.support.v4.widget.DrawerLayout>

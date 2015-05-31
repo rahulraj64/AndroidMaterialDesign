@@ -10,7 +10,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context="com.cinsoftwares.materialdesign.HomeActivity"
+        tools:context="com.cinsoftwares.materialdesign.activities.HomeActivity"
         android:fitsSystemWindows="true"
         >
 
@@ -18,7 +18,7 @@
             android:id="@+id/tool_bar"
             layout="@layout/tool_bar" />
 
-        <com.cinsoftwares.materialdesign.tabs.SlidingTabLayout
+        <com.cinsoftwares.materialdesign.views.tabs.SlidingTabLayout
             android:id="@+id/slidingTab"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
@@ -40,7 +40,7 @@
         android:layout_gravity = "start"
         android:layout_width="@dimen/nav_drawer_width"
         android:layout_height="match_parent"
-        android:name="com.cinsoftwares.materialdesign.NavigationDrawerFragment"
+        android:name="com.cinsoftwares.materialdesign.fragments.NavigationDrawerFragment"
         tools:layout="@layout/fragment_navigation_drawer" />
     
 </android.support.v4.widget.DrawerLayout>

@@ -1,4 +1,4 @@
-package com.cinsoftwares.materialdesign.tabs;
+package com.cinsoftwares.materialdesign.views.tabs;
 
 
 import android.R;

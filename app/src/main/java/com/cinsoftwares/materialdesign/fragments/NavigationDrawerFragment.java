@@ -1,4 +1,4 @@
-package com.cinsoftwares.materialdesign;
+package com.cinsoftwares.materialdesign.fragments;
 
 
 import android.content.Context;
@@ -17,6 +17,10 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Toast;
 
+import com.cinsoftwares.materialdesign.R;
+import com.cinsoftwares.materialdesign.adapters.NavDrawerAdapter;
+import com.cinsoftwares.materialdesign.pojo.ListItem;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -29,7 +33,7 @@ public class NavigationDrawerFragment extends Fragment {
     ActionBarDrawerToggle drawerToggle;
     private boolean isDrawerOpenedBefore;
     RecyclerView recyclerView;
-    RecyclerAdapter adapter;
+    NavDrawerAdapter adapter;
 
     public NavigationDrawerFragment() {
     }
@@ -46,7 +50,7 @@ public class NavigationDrawerFragment extends Fragment {
         // Inflate the layout for this fragment
         View layout = inflater.inflate(R.layout.fragment_navigation_drawer, container, false);
         recyclerView = (RecyclerView) layout.findViewById(R.id.recyclerView1);
-        adapter = new RecyclerAdapter(getActivity(), getItemList());
+        adapter = new NavDrawerAdapter(getActivity(), getItemList());
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity()));
         recyclerView.addOnItemTouchListener(new RecyclerTouchListener(getActivity(), recyclerView, new ItemTouchListener() {

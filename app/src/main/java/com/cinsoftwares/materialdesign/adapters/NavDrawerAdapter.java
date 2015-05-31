@@ -1,4 +1,4 @@
-package com.cinsoftwares.materialdesign;
+package com.cinsoftwares.materialdesign.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -9,20 +9,23 @@ import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.cinsoftwares.materialdesign.R;
+import com.cinsoftwares.materialdesign.pojo.ListItem;
+
 import java.util.Collections;
 import java.util.List;
 
 /**
  * Created by rahul on 5/17/15.
  */
-public class RecyclerAdapter  extends RecyclerView.Adapter<RecyclerAdapter.ItemViewHolder>{
+public class NavDrawerAdapter extends RecyclerView.Adapter<NavDrawerAdapter.ItemViewHolder>{
 
 
     LayoutInflater inflater;
     List<ListItem> itemList = Collections.emptyList();
     Context context;
 
-    public RecyclerAdapter(Context context, List<ListItem> items) {
+    public NavDrawerAdapter(Context context, List<ListItem> items) {
         this.context = context;
         itemList = items;
         inflater = LayoutInflater.from(context);

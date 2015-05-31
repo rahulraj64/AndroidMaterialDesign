@@ -1,4 +1,4 @@
-package com.cinsoftwares.materialdesign;
+package com.cinsoftwares.materialdesign.pojo;
 
 /**
  * Created by rahul on 5/17/15.
